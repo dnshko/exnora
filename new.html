@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+<body>
+    <div id="container">
+        <p>Demo</p>
+        <img src="images/book2/thumb1.jpg" />
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+    <script src="js/flipbook.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#container").flipBook({
+                pdfUrl: "pdf/test.pdf",
+                viewMode: 'swipe',
+                deeplinking: {
+                    enabled: true
+                },
+                skin: 'dark',
+                layout: 4,
+                btnSound: {
+                    vAlign: "top",
+                    hAlign: "left"
+                },
+                btnAutoplay: {
+                    vAlign: "top",
+                    hAlign: "left"
+                },
+                currentPage: {
+                    vAlign: "bottom",
+                    hAlign: "left"
+                },
+                lightBox: true,
+                lightboxBackground: 'rgb(219,244,248)',
+                lightBoxFullscreen: true,
+                singlePageMode: true,
+                viewMode: "3d",
+                icons:'material',
+                
+            });
+
+        })
+    </script>
+
+</body>
+
+</html>
