@@ -1,2 +1,3 @@
 # exnora
  
+firebase deploy
