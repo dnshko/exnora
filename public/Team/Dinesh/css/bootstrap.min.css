@@ -4580,9 +4580,9 @@ input[type=submit].btn-block {
 .navbar .container-sm,
 .navbar .container-xl {
     display: -ms-flexbox;
-    display: flex;
+    display: contents;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-wrap: initial;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: justify;

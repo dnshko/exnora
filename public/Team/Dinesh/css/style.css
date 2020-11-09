@@ -661,7 +661,7 @@ a:hover {
     position: absolute;
     left: 50%;
     /* top: 50px; */
-    padding: 30px 0;
+    /* padding: 30px 0; */
     transform: translateX(-50%);
     border-radius: 4px;
     z-index: 3;
@@ -3233,7 +3233,7 @@ only screen and (max-device-width: 767px) {
     box-shadow: 0px 1px 10px #00000029;
     border-radius: 30px;
     /* min-height: 450px; */
-    cursor: pointer;
+    
 }
 /* .image-caption-box:hover {
     background: linear-gradient(130deg, #009a4e 0%, lightgreen 100%);
@@ -3248,6 +3248,16 @@ only screen and (max-device-width: 767px) {
     padding: 10px;
     min-height: 320px;
     text-align: center;
+}
+.custom-silde-p{
+    border-radius: 0 0 30px 30px;
+    background: #fbc50b;
+    color: #000;
+    font-family: "Oduda";
+    /* padding: 10px;   */
+    /* min-height: 320px; */
+    text-align: center;
+    cursor: pointer;
 }
 
 * {
