@@ -3278,3 +3278,84 @@ only screen and (max-device-width: 767px) {
     border: 3px solid #009a4e;
   }
   
+  /* dd */
+  .side-half-picture {
+    width: auto;
+    height: calc(100% - 30px);
+    background-size: cover !important;
+    background-position: center !important;
+    margin: 15px 0;
+    border-radius: 30px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 10px #00000029;
+}
+
+.side-image {
+    width: 100%;
+    display: block;
+    margin: 0;
+    position: relative;
+}
+
+.side-image .video-button {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    line-height: 100px;
+    text-align: center;
+    font-size: 28px;
+    color: #009a4e;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    text-indent: 4px;
+}
+
+.side-image img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+.side-image .big-note-box {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #009a4e;
+    color: #fff;
+    position: absolute;
+    right: 30px;
+    bottom: -30px;
+    z-index: 1;
+    padding: 40px;
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.side-image .big-note-box:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 20px 0;
+    border-color: transparent transparent #009a4e transparent;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+}
+
+.side-image .big-note-box h4 {
+    width: 100%;
+    display: block;
+    font-size: 26px;
+    font-family: "Oduda";
+    margin-bottom: 20px;
+}
+
+.side-image .big-note-box p {
+    display: block;
+    margin: 0;
+    color: #fff;
+}
