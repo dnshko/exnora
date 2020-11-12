@@ -3359,3 +3359,59 @@ only screen and (max-device-width: 767px) {
     margin: 0;
     color: #fff;
 }
+
+
+/*new*/
+.image-caption-box{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 10px #00000029;
+    border-radius: 30px;
+    /* min-height: 450px; */
+    cursor: pointer;
+}
+/* .image-caption-box:hover {
+    background: linear-gradient(130deg, #009a4e 0%, lightgreen 100%);
+    box-shadow: none;
+  } */
+
+.custom-p {
+    border-radius: 15px;
+    background: #fbc50b;
+    color: #000;
+    font-family: "Oduda";
+    padding: 10px;
+    min-height: 320px;
+    text-align: center;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #fbc50b #009a4e;
+  }
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    background: #009a4e;
+   
+    background-size: cover;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #fbc50b;
+    border-radius: 20px;
+    border: 3px solid #009a4e;
+  }
+  .col-lg-8 p
+  {
+      color: #fff;
+  }
+  .joinas {
+    box-shadow: 0px 1px 10px #00000029;
+    border: 1px solid #cecece;
+    padding: 15px;
+  }
+
+  .joinas:hover {
+    background: #fbc50b;
+    border-color: transparent;
+  }

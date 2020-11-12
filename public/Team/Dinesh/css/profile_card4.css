@@ -1,0 +1,180 @@
+.sch-profile-card-4 {
+
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+    height: 550px;
+    font-family: 'Roboto', sans-serif;
+    background: #eeeb52;
+}
+.sch-profile-card-4 .sch-profile-card-first {
+    text-align: center;
+    height: 550px;
+}
+.sch-profile-card-4 .sch-profile-card-first .sch-profile-card-info {
+    background: #fff;
+    padding: 30px;
+	border-bottom: 1px solid #aaa;
+}
+.sch-profile-card-4 .sch-profile-card-first .sch-img {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 100%;
+    line-height: 158px;
+}
+.sch-profile-card-4 .sch-profile-card-first img {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.sch-profile-card-4 .sch-profile-card-first .sch-icon i {
+    color: #fff;
+}
+.sch-profile-card-4 .sch-profile-card-first .sch-icon-left {
+    float: left;
+}
+.sch-profile-card-4 .sch-profile-card-first .sch-icon-right {
+    float: right;
+}
+.sch-profile-card-4 .sch-profile-card-first .sch-profile-card-name {
+    font-size: 25px;
+    color: #333;
+    margin-top: 20px;
+}
+.sch-profile-card-4 .sch-profile-card-first .sch-profile-card-follow {
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+.sch-profile-card-4 .sch-profile-card-first .sch-profile-card-follow-item {
+    width: 33.333%;
+    float: left;
+}
+.sch-profile-card-4 .sch-profile-card-first .sch-profile-card-follow-number {
+    font-size: 30px;
+}
+.sch-profile-card-4 .sch-profile-card-first .sch-profile-card-follow-text {
+    font-size: 12px;
+}
+.sch-profile-card-item.sch-profile-card-second img {
+    border-radius: 20px;
+	width: 100%;
+}
+.sch-profile-card-4 .sch-profile-card-second {
+    text-align: center;
+    padding: 30px;
+    color:black;
+}
+.sch-profile-card-4 .sch-profile-card-second .sch-profile-card-name {
+    font-size: 25px;
+    margin-top: 20px;
+}
+.sch-profile-card-4 .sch-profile-card-second .sch-profile-card-job {
+    margin-bottom: 20px;
+}
+.sch-profile-card-4 .sch-profile-card-second .sch-profile-card-text {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.sch-profile-card-4 .sch-profile-card-second .sch-profile-card-location,
+.sch-profile-card-4 .sch-profile-card-second .sch-profile-card-web {
+    font-size: 14px;
+    font-style: italic;
+}
+.sch-profile-card-4 .sch-profile-card-second .sch-profile-card-button a {
+    width: 200px;
+	display: inline-block;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 20px;
+	height: 50px;
+	line-height: 50px;
+	background:#000;
+	text-decoration: none;
+	color:#fff;
+	border-radius: 10px;
+	border:1px soild #000;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px
+	rgba(0, 0, 0, 0);
+	position: relative;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+.sch-profile-card-4 .sch-profile-card-second .sch-profile-card-button a::before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0) 80%);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+}
+.sch-profile-card-4 .sch-profile-card-second .sch-profile-card-button a:hover::before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+}
+/* entire container, keeps perspective */
+.sch-profile-card-4{
+	-webkit-perspective: 1000;
+	perspective: 1000;
+}
+/* flip the pane when hovered */
+.sch-profile-card-4:hover .sch-profile-card-item-full, .sch-profile-card-4.hover .sch-profile-card-item-full {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+/* flip speed goes here */
+.sch-profile-card-4 .sch-profile-card-item-full {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+/* hide back of pane during swap */
+.sch-profile-card-4 .sch-profile-card-first, .sch-profile-card-4 .sch-profile-card-second {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+    box-shadow: 0px 0px 5px rgba(68, 68, 68, 0.59);
+}
+/* front pane, placed above back */
+.sch-profile-card-4 .sch-profile-card-first {
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    width: 100%;
+    background: #fff url(../../images/bg4.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+}
+/* back, initially hidden pane */
+.sch-profile-card-4 .sch-profile-card-second {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.sch-gallery-list {
+    margin: 20px 0;
+}
