@@ -164,7 +164,7 @@
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
     width: 100%;
-    background: #fff url(../../images/bg4.png);
+    background: #fff ;
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;
