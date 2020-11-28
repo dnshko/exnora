@@ -3415,3 +3415,129 @@ only screen and (max-device-width: 767px) {
     background: #fbc50b;
     border-color: transparent;
   }
+
+  /* ad */
+
+  
+/* css */
+
+.last-image img {
+    width: 100%;
+    height: 100%;
+    float: center;
+    position: relative;
+}
+
+
+.btn {
+    background-color: rgb(13, 172, 66);
+    border-radius: 30px;
+    color: white;
+    padding: 0.5rem;
+    position: relative;
+    text-transform: lowercase;
+    text-align: center;
+ }
+  .btn--block {
+    display: block;
+    box-shadow: 0 20px 40px 5px rgba(39, 37, 37, 0.6);
+    width: 60%;
+    margin: 0;
+    /* position: absolute; */
+    /* top: 30%; */
+    left: 50%;
+   -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 0.rem;
+
+  }
+  .cards {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .cards__item {
+    display: -webkit-box;
+    display: flex;
+    padding: 1rem;
+  }
+  @media (min-width: 40rem) {
+    .cards__item {
+      width: 50%;
+    }
+  }
+  @media (min-width: 56rem) {
+    .cards__item {
+      width: 33.3333%;
+    }
+  }
+  .card {
+    background: url(https://media.istockphoto.com/photos/beautiful-landscape-in-park-with-tree-and-green-grass-field-at-picture-id1021170914?k=6&m=1021170914&s=612x612&w=0&h=MbXPjMmkFVWiRYShvEaQ1ZWLoCw55f1mFu3p6fdZqhE=);
+    border-radius: 6%;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    height: 95%;
+}
+  
+  .card:hover .card__image {
+    -webkit-filter: contrast(100%);
+            filter: contrast(100%);
+  }
+  .card__content {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-flex: 1;
+            flex: 1 1 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    padding: 1rem;
+  }
+  .card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    -webkit-filter: contrast(70%);
+            filter: contrast(70%);
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+    transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+    transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+    transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  }
+  .card__image::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+  @media (min-width: 40rem) {
+    .card__image::before {
+      padding-top: 66.6%;
+    }
+  }
+  .card__title {
+    color: #696969;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .card__text {
+    -webkit-box-flex: 1;
+            flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
